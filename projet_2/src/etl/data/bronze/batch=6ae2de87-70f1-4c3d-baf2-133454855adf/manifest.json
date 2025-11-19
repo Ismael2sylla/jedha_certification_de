@@ -1,0 +1,31 @@
+{
+  "batch_id": "6ae2de87-70f1-4c3d-baf2-133454855adf",
+  "tables": [
+    "buyer",
+    "carrier",
+    "cart",
+    "cart_items",
+    "category",
+    "customer",
+    "customer_payment",
+    "customer_shipping",
+    "daily_deals",
+    "discount",
+    "orders",
+    "payment_details",
+    "product",
+    "product_images",
+    "product_reviews",
+    "returns",
+    "review",
+    "review_images",
+    "seller",
+    "seller_products",
+    "seller_reviews",
+    "shipment",
+    "shipping_details",
+    "subscription",
+    "wishlist_item"
+  ],
+  "rows_total": 1888717
+}

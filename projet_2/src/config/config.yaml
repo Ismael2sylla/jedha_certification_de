@@ -1,0 +1,21 @@
+runtime:
+  project: "amazon-reviews-part2"
+  timezone: "Europe/Paris"
+  salt: "CHANGE_ME"
+
+paths:
+  data_root: "./data"
+  bronze: "./data/bronze"
+  silver: "./data/silver"
+  gold: "./data/gold"
+  rejected: "./data/rejected"
+
+sources:
+  transactional_db:
+    url_env: "NEON_DB_URL"   # on lit l'URL complète depuis le .env
+    schema: "amazon"         # schéma dans lequel sont tes tables
+
+warehouse:
+  type: "postgres"
+  conn_str: "postgresql+psycopg2://etl:etl_password@127.0.0.1:5432/amazon_mock"
+

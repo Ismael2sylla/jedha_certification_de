@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "steps": {
+    "extract": {
+      "ok": true,
+      "elapsed_sec": 443.13,
+      "batch_id": "fd71cbd0-0216-4533-81ba-bbc23adfe392",
+      "bronze_dir": "data\\bronze\\batch=fd71cbd0-0216-4533-81ba-bbc23adfe392"
+    },
+    "transform": {
+      "ok": true,
+      "elapsed_sec": 3.71,
+      "batch_id": "fd71cbd0-0216-4533-81ba-bbc23adfe392",
+      "silver_dir": "data\\silver\\batch=fd71cbd0-0216-4533-81ba-bbc23adfe392",
+      "rows_total": 1888717
+    },
+    "model": {
+      "ok": true,
+      "elapsed_sec": 0.22,
+      "gold_dir": "data\\gold\\batch=fd71cbd0-0216-4533-81ba-bbc23adfe392",
+      "rows": 111322
+    }
+  },
+  "elapsed_total_sec": 447.06
+}
