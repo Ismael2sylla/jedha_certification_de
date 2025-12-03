@@ -183,9 +183,4 @@ gold/dim_products.parquet
 
 ---
 
-Si tu veux, je peux maintenant :
-- ajouter un schéma visuel professionnel,
-- enrichir le document,
-- transformer en version Word/PDF,
-- ou passer directement au Step 2.
 

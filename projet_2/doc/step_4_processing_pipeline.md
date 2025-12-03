@@ -215,8 +215,5 @@ L’ensemble du pipeline de transformation RAW → BRONZE → SILVER → GOLD es
 
 ---
 
-Si tu veux, je peux maintenant :
-- ajouter un schéma visuel d’architecture du pipeline,
-- créer le DAG Airflow complet (Step 5),
-- ou produire la version Word/PDF du Step 4.
+
 

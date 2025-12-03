@@ -182,8 +182,5 @@ Cette fondation permet d’avancer sereinement vers :
 
 ---
 
-Si tu veux, je peux maintenant :
-- ajouter un **schéma visuel d’architecture**,
-- préparer ton Step 4,
-- générer la **version PDF/Word** de ce document pour export.
+
 
