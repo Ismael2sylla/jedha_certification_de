@@ -1,4 +1,4 @@
-![Bannière Amazon Review Analysis](https://via.placeholder.com/1200x300.png?text=Amazon+Review+Analysis+Platform+%7C+Data+Engineering+%26+NLP)
+![Bannière Amazon Review Analysis](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80)
 
 # ✨ **Plateforme de Gestion & Analyse des Avis Amazon – Projet Global**
 ### _De l'analyse stratégique au déploiement prototype – Un pipeline complet Data Engineering_
