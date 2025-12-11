@@ -1,1 +1,142 @@
-project_2/.env
+###########################################
+#        PYTHON & VENV
+###########################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+*.log
+*.out
+*.tmp
+
+# Environnements virtuels
+venv/
+.env/
+.env.bak
+.python-version
+
+###########################################
+#        CONFIG / SECRETS / ENV VARS
+###########################################
+*.env
+*.env.local
+.env.*
+secrets.yaml
+secrets.toml
+credentials.json
+service_account.json
+*.key
+*.pem
+*.p12
+*.crt
+
+###########################################
+#        JUPYTER NOTEBOOKS
+###########################################
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Fichiers de sortie lourds
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.arrow
+*.pickle
+*.joblib
+
+###########################################
+#        DATA FILES (BRONZE / SILVER / GOLD)
+###########################################
+data/
+datasets/
+raw_data/
+clean_data/
+processed/
+outputs/
+logs/
+tmp/
+cache/
+files/
+
+# Si tu veux garder certains CSV, tu peux whitelister :
+# !data/*.csv
+
+###########################################
+#        AIRFLOW
+###########################################
+# Airflow internals
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+airflow/logs/
+airflow/dags/__pycache__/
+airflow/.env
+
+# Variables et connexions
+variables.json
+connections.json
+
+###########################################
+#        DOCKER / DOCKER COMPOSE
+###########################################
+# Docker build
+docker/*.env
+docker/**/__pycache__/
+docker/postgres/data/
+docker/postgres/init/*~
+docker/postgres/init/*.log
+docker/mongo/data/
+docker/redis/data/
+
+# Docker Compose
+*.pid
+*.pid.lock
+
+###########################################
+#        SNOWFLAKE
+###########################################
+# Credentials Snowflake
+snowflake_credentials.json
+snowflake_keys/
+*.p8
+*.p8b
+
+# Snowflake local cache
+*.snowsql_history
+
+###########################################
+#        LOGS & TEMP FILES
+###########################################
+logs/
+*.log
+*.tmp
+*.bak
+*.old
+*.swp
+*.swo
+
+###########################################
+#        VISUAL STUDIO CODE
+###########################################
+.vscode/
+.history/
+*.code-workspace
+
+###########################################
+#        SYSTEM FILES (Windows / MacOS)
+###########################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+###########################################
+#        GIT LFS SUGGESTION (pour gros fichiers)
+###########################################
+# Exemple : garder seulement les petits fichiers
+# *.csv filter=lfs diff=lfs merge=lfs -text
+# *.zip filter=lfs diff=lfs merge=lfs -text
+
