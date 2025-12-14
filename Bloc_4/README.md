@@ -1,7 +1,7 @@
 # 📘 **Projet 4 – Implementation Management**  
 ### _Bloc 4 : Support Utilisateur, Formation, Documentation & Pilotage_  
 👤 **Auteur : Ismaël Sylla**  
-🏢 **Référentiel : A13 – A15**
+
 
 Ce bloc couvre l’ensemble des activités d’accompagnement, de support utilisateur, de formation, de gestion documentaire et de suivi opérationnel nécessaires à une mise en production maîtrisée et durable.
 
