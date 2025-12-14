@@ -9,13 +9,13 @@
 
 ## 🔗 Liens des livrables – Bloc 3
 
-[![Step 1 – Maintenance](https://img.shields.io/badge/Step%201-Maintenance-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Projet%203%20-%20Maintenance.pdf)
+[![Step 1 – Maintenance](https://img.shields.io/badge/Step%201-Maintenance-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Phase%201-%20Compte%20Rendu%20de%20Mise%20en%20Production.pdf)
 
-[![Step 2 – Support Utilisateur](https://img.shields.io/badge/Step%202-Support%20Utilisateur-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Projet%203%20-%20Support%20Utilisateur.pdf)
+[![Step 2 – Support Utilisateur](https://img.shields.io/badge/Step%202-Support%20Utilisateur-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Phase%202%20-%20Support%20Utilisateur.pdf)
 
-[![Step 3 – Mise en Production](https://img.shields.io/badge/Step%203-Mise%20en%20Production-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Projet3%20-%20Compte%20Rendu%20de%20Mise%20en%20Production.pdf)
+[![Step 3 – Mise en Production](https://img.shields.io/badge/Step%203-Mise%20en%20Production-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_3/Docs/Phase%203%20-%20Maintenance.pdf)
 
-[![Step 4 – Streamlit App](https://img.shields.io/badge/Step%204-Streamlit%20App-8e44ad?style=for-the-badge)]()
+[![Step 4 – Streamlit App](https://img.shields.io/badge/Step%204-Streamlit%20App-8e44ad?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_3/src/amazon-mockup-e-commerce)
 
 ---
 

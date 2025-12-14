@@ -8,19 +8,19 @@
 # 📑 **📚 Table des Matières**
 
 ## 🔗 Liens des repositories
-[![Step 1 – Analyse stratégique](https://img.shields.io/badge/Step%201-Analyse%20stratégique-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase_1-step_1-rapport_analyse_strat%C3%A9gique-Introduction_g%C3%A9n%C3%A9rale-ismael_sylla.pdf)
+[![Step 1 – Analyse stratégique](https://img.shields.io/badge/Step%201-Analyse%20stratégique-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%201%20-%20rapport%20analyse%20strat%C3%A9gique.pdf)
 
-[![Step 2 – Idéation & besoins](https://img.shields.io/badge/Step%202-Idéation%20%26%20besoins-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase_1-step_2-identification_besoins_ideation-ismael_sylla.pdf)
+[![Step 2 – Idéation & besoins](https://img.shields.io/badge/Step%202-Idéation%20%26%20besoins-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%202%20-%20identification%20besoins.pdff)
 
-[![Step 3 – Veille technologique & réglementaire](https://img.shields.io/badge/Step%203-Veille%20tech%20%26%20réglementaire-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase_1-step_3-veille_r%C3%A9glementaire__technologique-ismael_sylla.pdf)
+[![Step 3 – Veille technologique & réglementaire](https://img.shields.io/badge/Step%203-Veille%20tech%20%26%20réglementaire-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%203%20-%20veille%20r%C3%A9glementaire_technologique.pdf)
 
-[![Step 4 – Cartographie des données](https://img.shields.io/badge/Step%204-Cartographie%20des%20données-8e44ad?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase_1-step_4-selection_donnees_cartographie_opportunites-ismael_sylla.pdf)
+[![Step 4 – Cartographie des données](https://img.shields.io/badge/Step%204-Cartographie%20des%20données-8e44ad?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%204%20-%20selection%20donnees%20cartographie%20opportunites.pdf)
 
-[![Step 5 – Prototype & scoring](https://img.shields.io/badge/Step%205-Prototype%20%26%20scoring-c0392b?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/src/project1-step5_V2_Ismael-SYLLA.ipynb)
+[![Step 5 – Prototype & scoring](https://img.shields.io/badge/Step%205-Prototype%20%26%20scoring-c0392b?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/src/Phase5%20-%20Prototype.ipynb)
 
-[![Step 6 – Spécifications techniques](https://img.shields.io/badge/Step%206-Spécifications%20techniques-2c3e50?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase_1-step_6-specifications_techniques_fonctionnelles-ismael_sylla.pdf)
+[![Step 6 – Spécifications techniques](https://img.shields.io/badge/Step%206-Spécifications%20techniques-2c3e50?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%206%20-%20specifications%20techniques%20fonctionnelle.pdff)
 
-[![Step 7 – Présentation finale](https://img.shields.io/badge/Step%207-Présentation%20finale-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Project-1-Step7-Presentation-Ismael-SYLLA.pptx)
+[![Step 7 – Présentation finale](https://img.shields.io/badge/Step%207-Présentation%20finale-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%207-%20Presentation.pdf)
 
 
 1. 🚀 Step 1 – Analyse stratégique  

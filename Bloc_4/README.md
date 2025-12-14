@@ -18,13 +18,13 @@ Ce bloc couvre l’ensemble des activités d’accompagnement, de support utilis
 ---
 
 # 🔗 **Liens des documents GitHub**
-[![Step 1 – Project Planning](https://img.shields.io/badge/Step%201-Project%20Planning-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/step1%20Project%20Planning.pdf)
+[![Step 1 – Project Planning](https://img.shields.io/badge/Step%201-Project%20Planning-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Phase%201%20-%20Project%20Planning.pdf)
 
-[![Step 2 – Budget](https://img.shields.io/badge/Step%202-Budget-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/step2%20Budget.pdf)
+[![Step 2 – Budget](https://img.shields.io/badge/Step%202-Budget-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Phase%202%20-%20Budget.pdf)
 
-[![Step 3 – Gestion RH](https://img.shields.io/badge/Step%203-Gestion%20RH-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Step3%20Gestion%20Rh.pdf)
+[![Step 3 – Gestion RH](https://img.shields.io/badge/Step%203-Gestion%20RH-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Phase%203%20-%20Gestion%20Rh.pdf)
 
-[![Step 4 – Support Utilisateur](https://img.shields.io/badge/Step%204-Support%20Utilisateur-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Step4%20Support%20Utilisateur.pdf)
+[![Step 4 – Support Utilisateur](https://img.shields.io/badge/Step%204-Support%20Utilisateur-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_4/Docs/Phase%204%20-%20Support%20Utilisateur.pdf)
 
 
 ---
