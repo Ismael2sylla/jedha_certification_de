@@ -23,13 +23,6 @@
 [![Step 7 – Présentation finale](https://img.shields.io/badge/Step%207-Présentation%20finale-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%207-%20Presentation.pdf)
 
 
-1. 🚀 Step 1 – Analyse stratégique  
-2. 💡 Step 2 – Idéation & besoins utilisateurs  
-3. 🛡 Step 3 – Veille technologique & réglementaire  
-4. 🗂 Step 4 – Sélection & cartographie des données  
-5. 🧪 Step 5 – Prototype : Identification des reviews pertinentes  
-6. ⚙ Step 6 – Spécifications techniques & fonctionnelles  
-7. 🧩 Step 7 – Synthèse globale
 
 ---
 
@@ -187,7 +180,7 @@ Python NLP + Scoring
    ↓
 Data Warehouse
    ↓
-Power BI
+Streamlit
 ```
 
 ---
@@ -202,5 +195,5 @@ Power BI
 | Prototype | Relevance scoring + tests |
 | Specs | Architecture + contraintes |
 
-➡️ La Phase 2 pourra industrialiser le pipeline Airflow + S3 + DW + BI et intégrer un modèle NLP avancé.
+➡️ La Phase 2 pourra industrialiser le pipeline Airflow + S3 + DW et intégrer un modèle NLP avancé.
 

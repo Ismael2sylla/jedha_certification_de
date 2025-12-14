@@ -13,13 +13,18 @@ L’objectif est de développer une chaîne complète : **stratégie, architectu
 ---
 
 # 🧭 **Liens vers les 4 blocs du projet**
+[![Bloc 1 – Analyse & Prototype](https://img.shields.io/badge/Bloc%201-Analyse%20%26%20Prototype-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_1)
 
-[🎯 **Bloc 1 – Analyse & Prototype**](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_1)  
-[📦 **Bloc 2 – Data Engineering & Pipelines**](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_2)  
-[🛠 **Bloc 3 – Gestion RH & Organisation**](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_3)  
-[📞 **Bloc 4 – Support, Budget & Gouvernance**](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_4)
+[![Bloc 2 – Data Engineering & Pipelines](https://img.shields.io/badge/Bloc%202-Data%20Engineering%20%26%20Pipelines-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_2)
+
+[![Bloc 3 – Gestion RH & Organisation](https://img.shields.io/badge/Bloc%203-Gestion%20RH%20%26%20Organisation-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_3)
+
+[![Bloc 4 – Support, Budget & Gouvernance](https://img.shields.io/badge/Bloc%204-Support%20%26%20Gouvernance-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/tree/main/Bloc_4)
+
+
 
 ---
+
 
 # 🧩 **Compétences RNCP couvertes**
 Le projet couvre les compétences du référentiel A1–A15, notamment :
