@@ -32,17 +32,19 @@ Le projet couvre les compétences du référentiel A1–A15, notamment :
 # 🧱 **Technologies utilisées**
 Voici les principaux outils et technologies utilisés dans ce projet, accompagnés de leurs logos pour une lecture plus visuelle :
 
-| Technologie | Logo | Description |
+| Technologie | Icône | Description |
 |------------|-------|-------------|
-| **Python 3.11+** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg) | Pandas, NumPy, SQLAlchemy, Transformers, NLTK |
-| **AWS S3** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg) | Stockage cloud des données brutes & transformées |
-| **Snowflake** | ![](https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg) | Data Warehouse analytique |
-| **PostgreSQL / NeonDB** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg) | Base relationnelle & stockage structuré |
-| **MongoDB** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg) | Base NoSQL semi‑structurée |
-| **Docker** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg) | Conteneurisation & reproductibilité |
-| **Airflow** | ![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg) | Orchestration de pipelines (préparé) |
-| **Power BI** | ![](https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg) | Visualisation & tableaux de bord |
-| **NLP (VADER)** | ![](https://cdn-icons-png.flaticon.com/512/3061/3061341.png) | Scoring de pertinence, sentiment analysis |
+| **Python 3.11+** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="22"/> | Pandas, NumPy, SQLAlchemy, Transformers, NLTK |
+| **AWS S3** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="22"/> | Stockage cloud des données brutes & transformées |
+| **Snowflake** | <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" width="22"/> | Data Warehouse analytique |
+| **PostgreSQL / NeonDB** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="22"/> | Base relationnelle & stockage structuré |
+| **MongoDB** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="22"/> | Base NoSQL semi-structurée |
+| **Docker** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="22"/> | Conteneurisation & reproductibilité |
+| **Airflow** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" width="22"/> | Orchestration de pipelines (préparé) |
+| **NLP (VADER)** | <img src="https://cdn-icons-png.flaticon.com/512/3061/3061341.png" width="22"/> | Scoring de pertinence, sentiment analysis |
+| **Streamlit** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" width="22"/> | Application web de visualisation interactive |
+
+
 
 
 
@@ -51,38 +53,43 @@ Voici les principaux outils et technologies utilisés dans ce projet, accompagn�
 
 # 🧱 **Architecture Globale du Projet**
 ```
-                ┌──────────────────────────┐
-                │     Sources de Données   │
-                │  (APIs, SQL, Scraping)   │
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                ┌──────────────────────────┐
-                │   Ingestion & Nettoyage  │
-                │ (Python, Pipelines ETL)  │
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                ┌──────────────────────────┐
-                │        AWS S3 (Raw)      │
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                ┌──────────────────────────┐
-                │    Snowflake / PostgreSQL│
-                │        (Stockage)        │
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                ┌──────────────────────────┐
-                │  NLP & Scoring Pertinence│
-                └──────────────┬───────────┘
-                               │
-                               ▼
-                ┌──────────────────────────┐
-                │     Dashboard & Analyse  │
-                │        (Power BI)        │
-                └──────────────────────────┘
+                ┌──────────────────────────────┐
+                │        Sources de données     │
+                │  APIs • SQL • Fichiers bruts  │
+                └───────────────┬──────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────────┐
+                │     Ingestion & Nettoyage     │
+                │   Python • Scripts ETL        │
+                │   (Orchestration Airflow)     │
+                └───────────────┬──────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────────┐
+                │        Data Lake AWS S3        │
+                │            (RAW)               │
+                └───────────────┬──────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────────┐
+                │   Stockage & Modélisation     │
+                │ Snowflake • PostgreSQL        │
+                └───────────────┬──────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────────┐
+                │   NLP & Scoring de Pertinence │
+                │  Sentiment • Relevance Score  │
+                │   (Jobs orchestrés Airflow)   │
+                └───────────────┬──────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────────┐
+                │   Exposition & Visualisation  │
+                │ FastAPI • Streamlit (Web App) │
+                └──────────────────────────────┘
+
 ```
 
 ---
@@ -124,8 +131,10 @@ Les avis contenant des mentions sur la livraison peuvent être analysés en mass
 
 ## 🔄 Data Flow complet du projet
 ```
-Utilisateur Amazon → Review → PostgreSQL → ETL Python → S3 Raw
-     → Transformation → Snowflake Silver/Gold → NLP Scoring → Dashboard
+Amazon → PostgreSQL → Airflow ETL → S3 Raw
+      → Snowflake Silver/Gold → NLP Scoring
+      → FastAPI → Streamlit
+
 ```
 
 ## 🧩 Pipeline NLP – Étapes
@@ -237,14 +246,18 @@ Ce dernier module décrit la mise en œuvre complète du projet : planning, budg
 ---
 
 # 👤 **À propos de l’auteur**
-**Ismaël Sylla** – Data Engineer & Cloud Enthusiast  
-Spécialisé en pipelines distribués, architectures cloud, NLP appliqué aux avis utilisateurs, gouvernance data et solutions analytiques.
 
-Toujours en quête d’optimiser : performance, automatisation, scalabilité et impact business.
+**Ismaël Sylla** – Data Engineering Trainee / Data & Cloud Enthusiast
+
+Actuellement en parcours de certification Data Engineering, avec un fort intérêt pour les pipelines de données, les architectures cloud, l’automatisation des traitements et l’exploitation analytique des données (NLP, scoring, visualisation).
+
+Ce projet s’inscrit dans une démarche d’apprentissage orientée production, qualité des données et bonnes pratiques DataOps, avec pour objectif une montée en compétence progressive vers un rôle de Data Engineer.
 
 ### 🔗 Me suivre
-[💼 **LinkedIn**](https://www.linkedin.com/)  
-[🐙 **GitHub**](https://github.com/Ismael2sylla)
+
+💼 LinkedIn
+
+🐙 GitHub
 
 ---
 
