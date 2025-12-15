@@ -10,7 +10,7 @@
 ## 🔗 Liens des repositories
 [![Step 1 – Analyse stratégique](https://img.shields.io/badge/Step%201-Analyse%20stratégique-003366?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%201%20-%20rapport%20analyse%20strat%C3%A9gique.pdf)
 
-[![Step 2 – Idéation & besoins](https://img.shields.io/badge/Step%202-Idéation%20%26%20besoins-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%202%20-%20identification%20besoins.pdff)
+[![Step 2 – Idéation & besoins](https://img.shields.io/badge/Step%202-Idéation%20%26%20besoins-1f77b4?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%202%20-%20identification%20besoins.pdf)
 
 [![Step 3 – Veille technologique & réglementaire](https://img.shields.io/badge/Step%203-Veille%20tech%20%26%20réglementaire-f39c12?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%203%20-%20veille%20r%C3%A9glementaire_technologique.pdf)
 
@@ -18,7 +18,7 @@
 
 [![Step 5 – Prototype & scoring](https://img.shields.io/badge/Step%205-Prototype%20%26%20scoring-c0392b?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/src/Phase5%20-%20Prototype.ipynb)
 
-[![Step 6 – Spécifications techniques](https://img.shields.io/badge/Step%206-Spécifications%20techniques-2c3e50?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/phase%206%20-%20specifications%20techniques%20fonctionnelle.pdff)
+[![Step 6 – Spécifications techniques](https://img.shields.io/badge/Step%206-Spécifications%20techniques-2c3e50?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%206%20-%20Sp%C3%A9cifications%20techniques.pdf)
 
 [![Step 7 – Présentation finale](https://img.shields.io/badge/Step%207-Présentation%20finale-27ae60?style=for-the-badge)](https://github.com/Ismael2sylla/jedha_certification_de/blob/main/Bloc_1/Docs/Phase%207-%20Presentation.pdf)
 
