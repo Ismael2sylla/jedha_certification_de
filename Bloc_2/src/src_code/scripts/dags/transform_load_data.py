@@ -3,16 +3,12 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.hooks.base import BaseHook
+from airflow.models import Variable   
 import os
 from utils.mongo_handler import MongoHandler
 from utils.review_processor import ReviewProcessor
 from utils.email_alerter import EmailAlerter
 import pandas as pd
-
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
 
 
 # ============================================================================
@@ -63,19 +59,18 @@ with DAG(
         logger.info(f"DEBUG -> S3 paths pulled from XCom : {s3_paths}")
 
         if not s3_paths:
-            # Get bucket from Airflow connection
             aws_conn = BaseHook.get_connection("aws_s3_default")
             bucket = aws_conn.extra_dejson.get("bucket_name", "a-ns-bucket")
             logger.info(f"Using S3 bucket from connection: {bucket}")
 
             s3_paths = {
-            'product': f"s3://{bucket}/raw/product/product.csv",
-            'category': f"s3://{bucket}/raw/category/category.csv",
-            'review': f"s3://{bucket}/raw/review/review.csv",
-            'product_reviews': f"s3://{bucket}/raw/product_reviews/product_reviews.csv",
-            'review_images': f"s3://{bucket}/raw/review_images/review_images.csv",
-            'orders': f"s3://{bucket}/raw/orders/orders.csv"
-        }
+                'product': f"s3://{bucket}/raw/product/product.csv",
+                'category': f"s3://{bucket}/raw/category/category.csv",
+                'review': f"s3://{bucket}/raw/review/review.csv",
+                'product_reviews': f"s3://{bucket}/raw/product_reviews/product_reviews.csv",
+                'review_images': f"s3://{bucket}/raw/review_images/review_images.csv",
+                'orders': f"s3://{bucket}/raw/orders/orders.csv"
+            }
 
         logger.info("Received S3 paths:")
         logger.info(s3_paths)
@@ -115,22 +110,16 @@ with DAG(
         task_id = 'load_tables_from_s3'
         execution_date = context['execution_date'].isoformat()
 
-        # Récupérer les tables chargées
         tables = ti.xcom_pull(task_ids='load_tables_from_s3')
 
-        if not tables:
-            logger.error("No tables loaded from S3")
-            return {"status": "error", "failed_tables": []}
-
-        # Vérifier si des tables ont échoué
         failed_tables = {name: df for name, df in tables.items() if df is None}
 
         if failed_tables:
-            logger.warning(f"Found {len(failed_tables)} failed table(s): {list(failed_tables.keys())}")
-
-            # Envoyer une alerte
             alerter = EmailAlerter(
-                to_emails=os.getenv("ALERT_EMAIL", "admin@example.com").split(",")
+                to_emails=Variable.get(   # ✅ DEMANDE PROF
+                    "ALERT_EMAIL",
+                    default_var="admin@example.com"
+                ).split(",")
             )
 
             alerter.alert_missing_s3_files(
@@ -140,11 +129,10 @@ with DAG(
                 tables=tables
             )
 
-            logger.info("Alert email sent for missing S3 files")
             return {"status": "warning", "failed_tables": list(failed_tables.keys())}
 
-        logger.info("All tables loaded successfully from S3")
         return {"status": "success", "failed_tables": []}
+
 
     check_s3_load = PythonOperator(
         task_id="check_s3_load",
@@ -157,12 +145,9 @@ with DAG(
     # -------------------------------------------------------
     def join_step(**context):
         tables = context["ti"].xcom_pull(task_ids="load_tables_from_s3")
-
-        # Filtrer les tables qui ont réussi (pas None)
         valid_tables = {name: df for name, df in tables.items() if df is not None}
 
         if not valid_tables:
-            logger.error("No valid tables to join")
             raise ValueError("No valid tables loaded from S3")
 
         processor = ReviewProcessor(aws_conn_id="aws_s3_default", snowflake_conn_id="snowflake_conn")
@@ -237,26 +222,8 @@ with DAG(
 
 
     # -------------------------------------------------------
-    # 7. Close connections
+    # 7. Vérification Snowflake + alerte
     # -------------------------------------------------------
-    def close_connections(**context):
-        ti = context["ti"]
-
-        stats = {
-            "snowflake_inserts": ti.xcom_pull(task_ids="load_clean_to_snowflake"),
-            "mongodb_inserts": ti.xcom_pull(task_ids="load_rejected_to_mongodb"),
-        }
-
-        processor = ReviewProcessor(aws_conn_id="aws_s3_default", snowflake_conn_id="snowflake_conn")
-        processor.save_metadata_to_mongodb(stats)
-
-
-    metadata = PythonOperator(
-        task_id="close_connections",
-        python_callable=close_connections,
-        provide_context=True
-    )
-
     def check_snowflake_load_and_alert(**context):
         ti = context["ti"]
         dag_id = context["dag"].dag_id
@@ -265,24 +232,24 @@ with DAG(
         snowflake_inserts = ti.xcom_pull(task_ids="load_clean_to_snowflake")
 
         if snowflake_inserts is None or snowflake_inserts == 0:
-            logger.warning(f"No data loaded to Snowflake: {snowflake_inserts} rows")
-
             alerter = EmailAlerter(
-                to_emails=os.getenv("ALERT_EMAIL", "admin@example.com").split(",")
+                to_emails=Variable.get(   # ✅ DEMANDE PROF
+                    "ALERT_EMAIL",
+                    default_var="admin@example.com"
+                ).split(",")
             )
 
             alerter.alert_no_data_to_snowflake(
                 dag_id=dag_id,
                 task_id="load_clean_to_snowflake",
                 execution_date=execution_date,
-                rows_inserted=snowflake_inserts or 0,
-                **context
+                rows_inserted=0
             )
 
             return {"status": "warning", "rows": 0}
 
-        logger.info(f"Successfully loaded {snowflake_inserts} rows to Snowflake")
         return {"status": "success", "rows": snowflake_inserts}
+
 
     check_snowflake_task = PythonOperator(
         task_id="check_snowflake_load",
@@ -296,6 +263,3 @@ with DAG(
     # =============================
     fetch_paths >> load_tables >> check_s3_load >> join_tables >> clean_validate
     clean_validate >> [save_clean, save_rejected] >> metadata >> check_snowflake_task
-
-
-
